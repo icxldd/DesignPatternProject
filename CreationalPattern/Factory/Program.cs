@@ -1,4 +1,5 @@
 ﻿using System;
+using Factory.AbsFactory;
 using Factory.FactoryMethod;
 using Factory.SimpleFactory.DBSimple;
 using Factory.SimpleFactory.EmployeeSimple;
@@ -11,7 +12,14 @@ namespace Factory
         static void Main(string[] args)
         {
             // SimpleFactory();
-            FactoryMethod();
+            // FactoryMethod();
+            AbsFactory();
+        }
+
+
+        static void AbsFactory()
+        {
+            new AbsFactoryUnitTest().Test();
         }
 
         static void FactoryMethod()
