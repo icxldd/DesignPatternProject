@@ -7,11 +7,11 @@ namespace Builder.Core
         /// <summary>
         /// 消息发送完成回调
         /// </summary>
-        private Action<Guid, string> _messageComplete;
+        protected Action<Guid, string> MessageComplete { get; }
 
         protected AbsPlatformManager(Action<Guid, string> messageComplete)
         {
-            _messageComplete = messageComplete;
+            MessageComplete = messageComplete;
         }
 
         protected AbsPlatformManager()
@@ -20,9 +20,9 @@ namespace Builder.Core
 
         public virtual void SendUserMessage(Guid userId, string msg)
         {
-            if (_messageComplete != null)
+            if (MessageComplete != null)
             {
-                _messageComplete(userId, msg);
+                MessageComplete(userId, msg);
             }
         }
     }

@@ -1,5 +1,6 @@
 ﻿using System;
 using Builder.Core;
+using Builder.Core.Factory;
 using Builder.Core.Friend;
 
 namespace Builder
@@ -8,8 +9,8 @@ namespace Builder
     {
         static void Main(string[] args)
         {
-            // TestFactoryBuilder();
-            TestFriend();
+            TestFactoryBuilder();
+            // TestFriend();
         }
 
         private static void TestFriend()
@@ -39,6 +40,15 @@ namespace Builder
                 Console.WriteLine($"App监听发送完毕：{userId},{message}");
             }).Builder();
             appPlatformManager.SendUserMessage(userId, message);
+
+
+            AbsPlatformManager UsaAppPlatformManager = new USAAppPlatformManagerBuilder().AddMessageCompleteEvent((
+                userId,
+                message) =>
+            {
+                Console.WriteLine($"美国App监听发送完毕：{userId},{message}");
+            }).Builder();
+            UsaAppPlatformManager.SendUserMessage(userId, message);
         }
     }
 }
