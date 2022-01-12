@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Uml", "Uml", "{08E27B77-10E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Uml", "Uml\Uml\Uml.csproj", "{4D202A5F-74A2-49A0-92F6-AE084F9EBC3B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{D31B0997-50A4-4890-A005-56BEB45A0FAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{4D202A5F-74A2-49A0-92F6-AE084F9EBC3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D202A5F-74A2-49A0-92F6-AE084F9EBC3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D202A5F-74A2-49A0-92F6-AE084F9EBC3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D31B0997-50A4-4890-A005-56BEB45A0FAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D31B0997-50A4-4890-A005-56BEB45A0FAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D31B0997-50A4-4890-A005-56BEB45A0FAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D31B0997-50A4-4890-A005-56BEB45A0FAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
