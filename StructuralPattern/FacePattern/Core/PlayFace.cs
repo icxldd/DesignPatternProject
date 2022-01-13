@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FacePattern.Core
+﻿namespace FacePattern.Core
 {
     public class PlayFace
     {
@@ -19,21 +17,4 @@ namespace FacePattern.Core
             _walletManager.Buy();
         }
     }
-
-    public class GoodsManager
-    {
-        public void Buy()
-        {
-            Console.WriteLine("商品下单");
-        }
-    }
-
-    public class WalletManager
-    {
-        public void Buy()
-        {
-            Console.WriteLine("钱包下单");
-        }
-    }
-
 }
