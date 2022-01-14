@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace VisitorPattern.Guild
 {
@@ -15,7 +16,7 @@ namespace VisitorPattern.Guild
         {
             foreach (var platform in _absPlatforms)
             {
-                platform.Accept(visitor);
+                Console.WriteLine(platform.Accept(visitor));
             }
         }
     }

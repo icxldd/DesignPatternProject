@@ -11,9 +11,9 @@ namespace VisitorPattern.Guild
             _guildMember = guildMember;
         }
 
-        public override void Accept(AbsVisitor absVisitor)
+        public override string Accept(AbsVisitor absVisitor)
         {
-            absVisitor.Visit(this);
+            return absVisitor.Visit(this);
         }
     }
 }

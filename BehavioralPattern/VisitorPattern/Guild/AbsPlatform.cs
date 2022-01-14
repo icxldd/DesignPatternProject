@@ -2,6 +2,6 @@
 {
     public abstract class AbsPlatform
     {
-        public abstract void Accept(AbsVisitor absVisitor);
+        public abstract string Accept(AbsVisitor absVisitor);
     }
 }

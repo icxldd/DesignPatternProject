@@ -2,10 +2,10 @@
 {
     public abstract class AbsVisitor
     {
-        public abstract void Visit(UserPlatform engineer);
+        public abstract string Visit(UserPlatform engineer);
 
-        public abstract void Visit(GuildPlatform manager);
+        public abstract string Visit(GuildPlatform manager);
 
-        public abstract void Visit(GuildMemberPlatform guildMemberPlatform);
+        public abstract string Visit(GuildMemberPlatform guildMemberPlatform);
     }
 }

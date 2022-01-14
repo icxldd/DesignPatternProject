@@ -9,9 +9,9 @@
             _guild = guild;
         }
 
-        public override void Accept(AbsVisitor absVisitor)
+        public override string Accept(AbsVisitor absVisitor)
         {
-            absVisitor.Visit(this);
+            return absVisitor.Visit(this);
         }
     }
 }
